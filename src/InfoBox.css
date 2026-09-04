@@ -1,0 +1,97 @@
+.InfoBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cardContainer {
+    width: 345px;
+    transition: 0.3s ease;
+}
+
+.cardContainer:hover {
+    transform: translateY(-8px);
+}
+
+.cardContainer .MuiCard-root {
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+}
+
+.cardContainer .MuiCard-root:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+}
+
+.cardContainer .MuiCardMedia-root {
+    transition: 0.4s ease;
+}
+
+.cardContainer .MuiCard-root:hover .MuiCardMedia-root {
+    transform: scale(1.03);
+}
+
+.cardContainer .MuiCardContent-root {
+    padding: 22px;
+}
+
+.cardContainer h5 {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.cardContainer p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.cardContainer p:last-child {
+    background: #f1f7ff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.weatherStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.statBox {
+    padding: 14px 8px;
+    border-radius: 12px;
+    background: #f7f9fc;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.25s ease;
+}
+
+.statBox:hover {
+    background: #eef5ff;
+    transform: translateY(-3px);
+}
+
+.statBox span {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.statBox small {
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.statBox strong {
+    color: #1e293b;
+    font-size: 16px;
+}
